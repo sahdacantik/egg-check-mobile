@@ -126,7 +126,7 @@ This approach minimizes unnecessary image capture while maintaining reliable ins
 
 This mobile application communicates with:
 
-➡ **Egg Check Server**
+➡️ **[Egg Check Server](https://github.com/sahda/egg-check-server)**
 
 ---
 
