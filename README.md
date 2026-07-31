@@ -118,8 +118,6 @@ The application:
 - stops early if a cracked egg is detected
 - uses the highest crack probability as the final result
 
-This approach minimizes unnecessary image capture while maintaining reliable inspection results. :contentReference[oaicite:1]{index=1}
-
 ---
 
 ## 🔗 Backend Repository
