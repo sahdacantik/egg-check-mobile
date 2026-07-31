@@ -124,7 +124,7 @@ The application:
 
 This mobile application communicates with:
 
-➡️ **[Egg Check Server](https://github.com/sahda/egg-check-server)**
+➡️ **[Egg Check Server]([https://github.com/sahda/egg-check-server](https://github.com/sahdacantik/egg-check-server.git))**
 
 ---
 
