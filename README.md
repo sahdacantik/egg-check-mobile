@@ -26,7 +26,7 @@ This application enables users to detect cracked eggs through image analysis wit
 The following demonstration shows the complete workflow of the application, from capturing an egg image to receiving AI-powered prediction results.
 
 <p align="center">
-  <img src="images/demo.gif" alt="Egg Check Mobile Demo" width="320">
+  <img src="demo.gif" alt="Egg Check Mobile Demo" width="320">
 </p>
 
 ---
