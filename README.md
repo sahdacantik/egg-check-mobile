@@ -1,16 +1,137 @@
-# eggcheck
+# 🥚 Egg Check Mobile
 
-A new Flutter project.
+AI-powered mobile application for egg quality inspection using Computer Vision and Convolutional Neural Networks (CNN).
 
-## Getting Started
+This application enables users to detect cracked eggs through image analysis with support for both single-egg and multi-egg inspection. The mobile application communicates with a cloud-based backend API that performs image preprocessing and CNN inference before returning the prediction results.
 
-This project is a starting point for a Flutter application.
+> This project was developed as part of my Bachelor's Thesis in Computer Science at Universitas Pakuan.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 📷 Capture images directly from camera or gallery
+- 🥚 Single egg quality inspection
+- 🥚🥚 Multi-egg inspection (up to 30 eggs)
+- 🔍 Automatic detail check from multiple viewing angles
+- 📊 Confidence score for every prediction
+- 🔥 Grad-CAM visualization for model interpretability
+- ☁️ Cloud-based inference through REST API
+- 📱 Cross-platform application built with Flutter
+
+---
+
+## 🎥 Application Demo
+
+The following demonstration shows the complete workflow of the application, from capturing an egg image to receiving AI-powered prediction results.
+
+<p align="center">
+  <img src="images/demo.gif" alt="Egg Check Mobile Demo" width="320">
+</p>
+
+---
+
+## 🏗 System Architecture
+
+```
+Flutter App
+      │
+      │ HTTP Request
+      ▼
+Flask REST API
+      │
+Automatic Preprocessing Pipeline
+      │
+CNN (MobileNetV2)
+      │
+Prediction + GradCAM
+      │
+JSON Response
+      ▼
+Flutter Application
+```
+
+---
+
+## ⚙ Tech Stack
+
+### Mobile
+
+- Flutter
+- Dart
+
+### Backend Communication
+
+- REST API
+- HTTP Package
+
+### AI
+
+- TensorFlow
+- MobileNetV2
+- Computer Vision
+
+### Other
+
+- Image Picker
+- JSON
+- Railway
+
+---
+
+## 🚀 Key Features
+
+### Single Egg Inspection
+
+Users can capture or upload a single egg image to receive:
+
+- Egg quality classification
+- Confidence score
+- Grad-CAM visualization
+
+---
+
+### Multi Egg Inspection
+
+The application supports simultaneous inspection of multiple eggs.
+
+The backend automatically:
+
+- detects the egg tray
+- segments individual eggs
+- preprocesses each image
+- performs CNN inference
+- returns prediction for every detected egg
+
+Supports up to **30 eggs** in a single image. :contentReference[oaicite:0]{index=0}
+
+---
+
+### Detail Check
+
+When an egg falls into the **Need Further Inspection** zone, users are guided to capture images from different angles.
+
+The application:
+
+- captures up to three viewing angles
+- performs prediction for every image
+- stops early if a cracked egg is detected
+- uses the highest crack probability as the final result
+
+This approach minimizes unnecessary image capture while maintaining reliable inspection results. :contentReference[oaicite:1]{index=1}
+
+---
+
+## 🔗 Backend Repository
+
+This mobile application communicates with:
+
+➡ **Egg Check Server**
+
+---
+
+## 👨‍💻 Author
+
+Sahda Rahani Susilawati
+
+• Computer Science • Software Engineer • Computer Vision
